@@ -654,6 +654,11 @@ html {
 address {
   margin-top: 20px;
 }
+@media screen and (max-width: 1199px) {
+  address {
+    margin-bottom: 60px;
+  }
+}
 
 .footer-logo-color {
   font-family: "Raleway";
@@ -708,8 +713,26 @@ address {
   cursor: pointer;
 }
 
-.footer-info {
-  margin-right: 70px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-info {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    margin-right: 70px;
+  }
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-items {
+    align-items: center;
+  }
 }
 
 .footer-text {
@@ -722,8 +745,15 @@ address {
   color: var(--secondary-text-color);
 }
 
-.footer-wrap {
-  margin-right: auto;
+@media screen and (max-width: 767px) {
+  .footer-wrap {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    margin-right: auto;
+  }
 }
 
 .footer-item {
@@ -765,6 +795,11 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   color: var(--secondary-text-color);
+}
+@media screen and (max-width: 767px) {
+  .input-emeil {
+    margin-bottom: 20px;
+  }
 }
 
 .input-emeil::-moz-placeholder {

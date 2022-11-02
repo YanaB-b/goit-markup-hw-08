@@ -6,21 +6,21 @@
 .footer-conteiner{
     @media screen and (max-width: 767px) {
         flex-direction: column;
-        align-items: center;
-    }
+        align-items: center;}
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
-        align-items: baseline;
-      }
-
+        align-items: baseline;}
       @media screen and (max-width: 1199px) {
-        flex-wrap: wrap;
-      }
+        flex-wrap: wrap;}
     
 }
 address{
     margin-top: 20px;
+    @media screen and (max-width: 1199px){
+        margin-bottom: 60px;
+    }
+   
 }
 
 .footer-logo-color{
@@ -68,8 +68,21 @@ address{
 }
 
 .footer-info{
-    margin-right: 70px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;}
+    @media screen and (min-width: 1200px){
+        margin-right: 70px;
+    }
+
 }
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @media screen and (max-width: 1199px) {
+      align-items: center;
+    }}
+
 .footer-text{
     margin-bottom: 20px;
     @include font(700, 14px, 1.14, 0.03em);
@@ -78,8 +91,12 @@ address{
 }
 
 .footer-wrap{
+    @media screen and (max-width: 767px){
+        margin-bottom: 60px;
+    }
+      @media screen and (min-width: 1200px) {
     margin-right: auto;
-   
+      }
 
 }
 
@@ -125,6 +142,9 @@ address{
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     color: var(--secondary-text-color);
+    @media screen and (max-width: 767px){
+        margin-bottom: 20px;
+    }
 }
 
 .input-emeil::placeholder{
@@ -136,6 +156,7 @@ address{
     @include font(700, 16px, 1.88, 0.03em);
     color: #FFFFFF;
     background: #2196F3;
+   
 
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
