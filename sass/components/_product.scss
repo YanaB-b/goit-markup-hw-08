@@ -1,0 +1,40 @@
+.desktop{
+    padding-bottom: 94px;
+}
+
+.img__desk{
+    display: flex;
+    gap: 30px;
+}
+
+.desk{
+    @include font(700, 36px, 1.16, 0.03em);
+    text-align: center;
+    color: var(--main-text-color);
+
+}
+.desk__test{
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 0;
+
+}
+
+.product{
+    position: relative;
+}
+.product__text{
+
+    height: 70px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    @include font(700, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    background: rgba(47, 48, 58, 0.8);
+}
