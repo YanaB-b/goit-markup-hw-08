@@ -1,5 +1,8 @@
 .desktop{
     padding-bottom: 94px;
+    @media screen and (max-width: 768px ){
+        display: none;
+    }
 }
 
 .img__desk{
@@ -11,18 +14,18 @@
     @include font(700, 36px, 1.16, 0.03em);
     text-align: center;
     color: var(--main-text-color);
-
 }
+
 .desk__test{
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 0;
-
 }
 
 .product{
     position: relative;
 }
+
 .product__text{
 
     height: 70px;

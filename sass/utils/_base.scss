@@ -17,6 +17,7 @@ p{
 }
 img{
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -30,9 +31,15 @@ button{
     border-radius: 4px;
 }
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+   
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
+
 html{
     box-sizing: border-box;
     margin: 0;
@@ -55,14 +62,7 @@ html{
 .link{
     text-decoration: none
 }
-.conteiner{
-    width: 1200px;
-    /* outline: 5px solid tomato; */
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
 
-}
 .conteiner-section{
     margin-top: 32px;
     margin-bottom: 32px;

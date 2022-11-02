@@ -1,22 +1,35 @@
 .client-text{
     margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font(700, 36px, 1.16, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--main-text-color);
+    @media screen and (max-width: 768px){
+        @include font(700, 28px, 1.18, 0.03em);   
+    }
 
 }
 
 .client-nav{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+.client-list{
+    @media screen and (min-width: 480px){
+
+        width: calc((100% - 30px) / 2);
+     }
+     @media screen and (min-width: 768px){
+
+        width: calc((100% - 60px) / 3);
+     }
+     @media screen and (min-width: 1200px){
+        width: calc((100% - 150px) / 6);
+    }
+
 }
 .icon-client{
     
-    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
