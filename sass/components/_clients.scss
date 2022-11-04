@@ -1,12 +1,12 @@
 .client-text{
     margin-bottom: 50px;
-    @include font(700, 36px, 1.16, 0.03em);
+    @include font(700, 28px, 1.18, 0.03em);
     text-align: center;
     color: var(--main-text-color);
-    @media screen and (max-width: 768px){
-        @include font(700, 28px, 1.18, 0.03em);   
+    @media screen and (min-width: 1200px){
+    @include font(700, 36px, 1.16, 0.03em);
     }
-
+   
 }
 
 .client-nav{

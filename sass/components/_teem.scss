@@ -20,7 +20,7 @@
     padding-top: 0;
     @include font(700, 36px, 1.16, 0.03em);
     color: var(--main-text-color);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1200px){
         @include font(700, 28px, 1.18, 0.03em)
     }
 

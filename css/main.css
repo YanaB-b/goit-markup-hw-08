@@ -411,7 +411,7 @@ html {
 .desktop {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .desktop {
     display: none;
   }
@@ -485,7 +485,7 @@ html {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .teem-desk {
     font-weight: 700;
     font-size: 28px;
@@ -573,17 +573,17 @@ html {
 .client-text {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-text-color);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .client-text {
     font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
+    font-size: 36px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
   }
 }
