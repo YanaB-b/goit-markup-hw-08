@@ -18,13 +18,21 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="conteiner">
-        <nav class="conteiner__nav ">
-          <a class="logo header__logo link" href="./index.html">
-            Web<span class="header__logo__color link">Studio</span>
-          </a>
-          <ul class="conteiner__nav  menu__list list">
+        <a class="logo header__logo link" href="./index.html">
+          Web<span class="header__logo__color link">Studio</span>
+        </a>
+        <button class="menu-open"  type="button">
+          <svg  class="menu-open-icon" width="24px" height="16px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        
+
+        <nav class="conteiner__nav  ">
+         
+          <ul class="conteiner__nav  menu__list  list">
             <li class="menu__item">
               <a class="menu__link link current" href="./index.html">Студія</a>
             </li>
@@ -55,7 +63,46 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mob-menu ">
+        <button class="menu-close">
+          <svg class="icon-close" width="19px" height="19px">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-nav list">
+          <li class="menu-list">
+            <a class="menu-text link current" href="./index.html">Студія</a>
+          </li>
+          <li class="menu-list">
+            <a class=" menu-text link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text link" href="">Контакти</a>
+          </li>
+        </ul>
+          <ul class="mob-contact list">
+          <li class="mob-menu-contact">
+            <a class="menu-contact link" href="mailto:info@devstudio.com">
+             
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mob-menu-contact">
+            <a class="menu-contact-tel link" href="tel:+380961111111">
+             
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-cos list" >
+        <li><a class="link" href="">Instagram</a></li>
+        <li><a class="link" href="">Twitter</a></li>
+        <li><a class="link" href="">Facebook</a> </li>
+        <li><a class="link" href="">LinkedIn</a> </li>
+      </ul>
+
+      </div>
+    </header>
     <main>
       <section class="subject">
         <div class="conteiner">
@@ -108,15 +155,26 @@
           <h2 class="desk desk__test">Чим ми займаємося</h2>
           <ul class="img__desk list">
             <li class="product">
-              <img src="images/img.jpg" alt="photo" width="370" height="294" />
+              
+                <img srcset="./images/img.jpg 1x, 
+                ./images/img-2x.jpg 2x"
+                src="images/img.jpg" alt="photo" width="370" height="294" />
               <p class="product__text">десктопні додатки</p>
             </li>
             <li class="product">
-              <img src="images/img1.jpg" alt="photo" width="370" height="294" />
+              
+                <img 
+                srcset="./images/img1.jpg 1x, 
+                ./images/img1-2x.jpg 2x"
+                src="images/img1.jpg" alt="photo" width="370" height="294" />
               <p class="product__text">мобільні додатки</p>
             </li>
             <li class="product">
-              <img src="images/img2.jpg" alt="photo" width="370" height="294" />
+             
+              <img 
+              srcset="./images/img2.jpg 1x, 
+                ./images/img2-2x.jpg 2x"
+              src="images/img2.jpg" alt="photo" width="370" height="294" />
               <p class="product__text">дизайнерські рішення</p>
             </li>
           </ul>
@@ -128,14 +186,24 @@
           <h2 class="teem-desk teem-desk-conteiner">Наша команда</h2>
           <ul class="img-conteiner list">
             <li class="list-teem">
-          
-              <img
-            
-                class="img-teem"
-                src="images/user.jpg"
-                alt="user"
-                width="270"
-              />
+<picture>
+  <source srcset="./images/user.jpg 1x, 
+  ./images/user1b-2x.jpg 2x"
+  media="(min-width: 1200px)">
+  <source srcset="./images/user-tab1x.jpg 1x, 
+  ./images/user-tab2x.jpg 2x"
+  media="(min-width: 768px)">
+  <source srcset="./images/user-mob1x.jpg 1x, 
+  ./images/user-mob2x.jpg 2x"
+  media="(max-width: 767px)">
+  <img
+  class="img-teem"
+  src="images/user.jpg"
+  alt="user"
+  width="450"/>
+</picture>
+         
+           
               <div class="teem-conteiner">
                 <h3 class="teem-subtitle">Ігор Дем'яненко</h3>
                 <p class="teem-subtitle-text">Product Designer</p>
@@ -178,13 +246,24 @@
               </div>
             </li>
             <li class="list-teem">
-              <img 
+              <picture>
+                <source srcset="./images/user1.jpg 1x, 
+                ./images/userw1-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/user1-tab1x.jpg 1x, 
+                ./images/user1-tab2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/user1-mob1x.jpg 1x, 
+                ./images/user1-mob2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img 
           
                 class="img-teem"
                 src="images/user1.jpg"
                 alt="user"
-                width="270"
+                width="450"
               />
+            </picture>
               <div class="teem-conteiner">
                 <h3 class="teem-subtitle">Ольга Рєпіна</h3>
                 <p class="teem-subtitle-text">Frontend Developer</p>
@@ -227,12 +306,22 @@
               </div>
             </li>
             <li class="list-teem">
+              <picture>
+                <source srcset="./images/user2.jpg 1x, 
+                ./images/userw2-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/user2-tab1x.jpg 1x, 
+                ./images/user2-tab2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/user2-mob1x.jpg 1x, 
+                ./images/user2-mob2x.jpg 2x"
+                media="(max-width: 767px)">
               <img
                 class="img-teem"
                 src="images/user2.jpg"
                 alt="user"
-                width="270"
-              />
+                width="450"/>
+            </picture>
               <div class="teem-conteiner">
                 <h3 class="teem-subtitle">Микола Тарасов</h3>
                 <p class="teem-subtitle-text">Marketing</p>
@@ -275,6 +364,16 @@
               </div>
             </li>
             <li class="list-teem">
+              <picture>
+                <source srcset="./images/user3.jpg 1x, 
+                ./images/userw3-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/user3-tab1x.jpg 1x, 
+                ./images/user3-tab2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/user3-mob1x.jpg 1x, 
+                ./images/user3-mob2x.jpg 2x"
+                media="(max-width: 767px)">
               <img
               
                 class="img-teem"
@@ -282,6 +381,7 @@
                 alt="user"
                 width="270"
               />
+            </picture>
               <div class="teem-conteiner">
                 <h3 class="teem-subtitle">Михайло Єрмаков</h3>
                 <p class="teem-subtitle-text">UI Designer</p>

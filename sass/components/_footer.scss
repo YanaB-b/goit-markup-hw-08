@@ -24,10 +24,12 @@ address{
    
 }
 .footer-logo{
+    @media screen and (max-width: 1199px){
+        display: block;
+        text-align: center;
+     }
+    }
 
- display: block;
-   text-align: center;
-}
 
 .footer-logo-color{
     font-family: 'Raleway';

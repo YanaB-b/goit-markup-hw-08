@@ -146,14 +146,14 @@
 }
 
 .check-text{
-    @include font(400, 14px, 1.71, 0.03em);
-    color: #757575;
+    @include font(400, 12px, 1.67, 0.03em);
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 768px){
-        @include font(400, 12px, 1.67, 0.03em)
+    @media screen and (min-width: 1200px){
+        @include font(400, 14px, 1.71, 0.03em);
+        color: #757575;
 }}
 
 .check-text span{
