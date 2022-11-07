@@ -24,7 +24,7 @@
     }
    
     &::before{
-    display: block;
+    display: flex;
     content: "";
     height: 120px;
     background-color: var(--buttons-port-color);

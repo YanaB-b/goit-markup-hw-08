@@ -23,7 +23,7 @@
         <a class="logo header__logo link" href="./index.html">
           Web<span class="header__logo__color link">Studio</span>
         </a>
-        <button class="menu-open"  type="button">
+        <button class="menu-open" data-mob-open type="button" >
           <svg  class="menu-open-icon" width="24px" height="16px">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -63,44 +63,47 @@
           </li>
         </ul>
       </div>
-      <div class="mob-menu ">
-        <button class="menu-close">
-          <svg class="icon-close" width="19px" height="19px">
-            <use href="./images/symbol-defs.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <ul class="mob-menu-nav list">
-          <li class="menu-list">
-            <a class="menu-text link current" href="./index.html">Студія</a>
-          </li>
-          <li class="menu-list">
-            <a class=" menu-text link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="menu-list">
-            <a class="menu-text link" href="">Контакти</a>
-          </li>
+      <div data-mob  class="mob-menu is-hidden" >
+        <div class="content-menu">
+          <button class="menu-close" data-mob-close type="button">
+            <svg class="icon-close" width="19px" height="19px">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-nav list">
+            <li class="menu-list">
+              <a class="menu-text link current" href="./index.html">Студія</a>
+            </li>
+            <li class="menu-list">
+              <a class=" menu-text link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-text link" href="">Контакти</a>
+            </li>
+          </ul>
+            <ul class="mob-contact list">
+            <li class="mob-menu-contact">
+              <a class="menu-contact link" href="mailto:info@devstudio.com">
+               
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-menu-contact">
+              <a class="menu-contact-tel link" href="tel:+380961111111">
+               
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-cos list" >
+          <li class="mob-cos"><a class="mob-link link" href="">Instagram</a></li>
+          <li class="mob-cos"><a class="mob-link link" href="">Twitter</a></li>
+          <li class="mob-cos"><a class="mob-link link" href="">Facebook</a> </li>
+          <li class="mob-cos"><a class="mob-link link" href="">LinkedIn</a> </li>
         </ul>
-          <ul class="mob-contact list">
-          <li class="mob-menu-contact">
-            <a class="menu-contact link" href="mailto:info@devstudio.com">
-             
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="mob-menu-contact">
-            <a class="menu-contact-tel link" href="tel:+380961111111">
-             
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <ul class="menu-cos list" >
-        <li><a class="link" href="">Instagram</a></li>
-        <li><a class="link" href="">Twitter</a></li>
-        <li><a class="link" href="">Facebook</a> </li>
-        <li><a class="link" href="">LinkedIn</a> </li>
-      </ul>
-
+  
+        </div>
+        
       </div>
     </header>
     <main>
@@ -627,5 +630,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob.js"></script>
   </body>
 </html>

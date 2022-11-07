@@ -438,7 +438,7 @@ html {
   }
 }
 .advantage::before {
-  display: block;
+  display: flex;
   content: "";
   height: 120px;
   background-color: var(--buttons-port-color);
@@ -1316,12 +1316,14 @@ address {
 }
 
 .mob-menu {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 796px;
   position: fixed;
   top: 0;
   padding-top: 48px;
   padding-left: 40px;
+  padding-bottom: 48px;
   z-index: 1;
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1398,5 +1400,26 @@ address {
 }
 
 .menu-cos {
-  display: inline;
+  display: flex;
+  gap: 10px;
+}
+
+.mob-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  padding: 0 0;
+  color: #2196F3;
+}
+.mob-link::after {
+  display: inline-flex;
+  margin-left: 10px;
+  align-items: center;
+  content: "";
+  width: 1px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-repeat: no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */
