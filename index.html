@@ -23,7 +23,7 @@
         <a class="logo header__logo link" href="./index.html">
           Web<span class="header__logo__color link">Studio</span>
         </a>
-        <button class="menu-open" type="button" data-menu-open >
+        <button class="menu-open" type="button" js-open-menu >
           <svg  class="menu-open-icon" width="24px" height="16px">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -63,9 +63,9 @@
           </li>
         </ul>
       </div>
-      <div class="mob-menu is-hidden" data-menu>
+      <div js-menu-container class="mob-menu is-hidden" >
         <div class="content-menu">
-          <button class="menu-close"  type="button" data-menu-close>
+          <button class="menu-close"  type="button" js-close-menu>
             <svg class="icon-close" width="19px" height="19px">
               <use href="./images/symbol-defs.svg#icon-close-black"></use>
             </svg>
@@ -574,9 +574,9 @@
       </div>
     
     </footer>
-    <div class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="btn-close"  type="button">
+        <button class="btn-close" data-modal-close type="button">
           <svg class="icon-close" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
