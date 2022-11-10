@@ -18,9 +18,8 @@
 .header__logo{
     
     padding: 15px 15px;
-    @media screen and (min-width: 768px){
-
-    }margin-right: 93px;
+    margin-right: auto;
+   
     @media screen and (min-width: 1200px){
         margin-right: 93px;
         margin-left: 0;
@@ -54,6 +53,9 @@
     align-items: center;
     justify-content: flex-end;
     margin-left: auto;
+    @media screen and (min-width: 1200px){
+        margin-left: 0;
+    }
   }
 
 .menu-open{
@@ -121,19 +123,20 @@ margin-right: 50px;
         border-radius: 2px;}
 }
 .contakt{
-    margin-left: auto;
+    margin-right: 0;
     display: none;
+    margin-left: auto;
+    
     @media screen and (min-width: 768px){
         display: block;
 
-   
     }
     @media screen and (min-width: 1200px){
         display: flex;
+        
 
     }
-
-    
+  
 }
 
 .contakt__mail{

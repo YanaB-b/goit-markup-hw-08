@@ -143,15 +143,15 @@ address{
 
 
 
-// .footer-row{
-//     display: flex;
-//     flex-wrap: wrap;
-//     @media screen and (max-width: 1199px){
-//         display: flex;
-//         flex-direction: column;
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
     
-//     }
-// }
+    }
+}
 .input-emeil{
     width: 100%;
     max-width: 450px;

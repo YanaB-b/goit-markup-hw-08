@@ -91,7 +91,6 @@ html {
 
 .conteiner {
   width: 100%;
-  /* outline: 5px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -147,7 +146,7 @@ html {
 
 .header__logo {
   padding: 15px 15px;
-  margin-right: 93px;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
@@ -198,6 +197,11 @@ html {
   align-items: center;
   justify-content: flex-end;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .header .header-page {
+    margin-left: 0;
+  }
 }
 
 .menu-open {
@@ -270,8 +274,9 @@ html {
 }
 
 .contakt {
-  margin-left: auto;
+  margin-right: 0;
   display: none;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .contakt {
@@ -908,6 +913,17 @@ address {
   fill: var(--secondary-text-color);
 }
 
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .input-emeil {
   width: 100%;
   max-width: 450px;
@@ -1414,17 +1430,11 @@ address {
 }
 
 .menu-nav {
-  display: flex;
   padding: 0;
-  margin: 0;
+  margin-bottom: 302px;
   list-style: none;
 }
 
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
 .menu-list:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1447,8 +1457,6 @@ address {
 
 .mob-contact {
   margin-bottom: 64px;
-  justify-content: center;
-  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .mob-contact {
