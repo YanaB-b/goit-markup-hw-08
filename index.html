@@ -23,7 +23,10 @@
         <a class="logo header__logo link" href="./index.html">
           Web<span class="header__logo__color link">Studio</span>
         </a>
-        <button class="menu-open is-open"  type="button" js-open-menu >
+        <div class="header-page">
+          <button class="menu-open js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"  type="button" js-open-menu >
           <svg  class="menu-open-icon" width="24px" height="16px">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -62,52 +65,54 @@
             >
           </li>
         </ul>
-      </div>
-      <div js-menu-container class="mob-menu is-hidden" >
-        <div class="content-menu">
-          <button class="menu-close"  type="button" js-close-menu>
-            <svg class="icon-close" width="19px" height="19px">
-              <use href="./images/symbol-defs.svg#icon-close-black"></use>
-            </svg>
-          </button>
-          <nav class="mob-menu-nav">
-            <ul class="menu-nav list">
-              <li class="menu-list">
-                <a class="menu-text link current" href="./index.html">Студія</a>
-              </li>
-              <li class="menu-list">
-                <a class=" menu-text link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="menu-list">
-                <a class="menu-text link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          
-            <ul class="mob-contact list">
-            <li class="mob-menu-contact">
-              <a class="menu-contact link" href="mailto:info@devstudio.com">
-               
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mob-menu-contact">
-              <a class="menu-contact-tel link" href="tel:+380961111111">
-               
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="menu-cos list" >
-          <li class="mob-cos"><a class="mob-link link" href="">Instagram</a></li>
-          <li class="mob-cos"><a class="mob-link link" href="">Twitter</a></li>
-          <li class="mob-cos"><a class="mob-link link" href="">Facebook</a> </li>
-          <li class="mob-cos"><a class="mob-link link" href="">LinkedIn</a> </li>
-        </ul>
-  
         </div>
         
       </div>
+      <div  class="mob-menu is-open js-menu-container" id="mobile-menu" >
+      
+        <button class="menu-close js-close-menu" type="button" >
+          <svg class="icon-close" width="19px" height="19px">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+       
+          <ul class="menu-nav list">
+            <li class="menu-list">
+              <a class="menu-text link current" href="./index.html">Студія</a>
+            </li>
+            <li class="menu-list">
+              <a class=" menu-text link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-text link" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mob-contact list">
+          <li class="mob-menu-contact">
+            <a class="menu-contact link" href="mailto:info@devstudio.com">
+             
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mob-menu-contact">
+            <a class="menu-contact-tel link" href="tel:+380961111111">
+             
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-cos list" >
+        <li class="mob-cos"><a class="mob-link link" href="">Instagram</a></li>
+        <li class="mob-cos"><a class="mob-link link" href="">Twitter</a></li>
+        <li class="mob-cos"><a class="mob-link link" href="">Facebook</a> </li>
+        <li class="mob-cos"><a class="mob-link link" href="">LinkedIn</a> </li>
+      </ul>
+
+    
+      
+    
+       </div>
+         
     </header>
     <main>
       <section class="subject">

@@ -4,10 +4,7 @@
 }
 
 .footer-conteiner{
-    @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;}
+   
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
@@ -119,7 +116,7 @@ address{
 
 .footer-item{
     display: flex;
-   
+   justify-content: center;
     gap: 10px;
     padding: 0;
     margin: 0 0;
@@ -146,17 +143,18 @@ address{
 
 
 
-.footer-row{
-    display: flex;
-    flex-wrap: wrap;
-    @media screen and (max-width: 1199px){
-        display: flex;
-        flex-direction: column;
+// .footer-row{
+//     display: flex;
+//     flex-wrap: wrap;
+//     @media screen and (max-width: 1199px){
+//         display: flex;
+//         flex-direction: column;
     
-    }
-}
+//     }
+// }
 .input-emeil{
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     padding: 16px;
   
