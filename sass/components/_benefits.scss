@@ -57,7 +57,7 @@ background-image: url(../images/antenna.svg);
     @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--main-text-color);
-    @media screen and (max-width: 479px){
+    @media screen and (max-width: 779px){
         text-align: center;
     }
 }

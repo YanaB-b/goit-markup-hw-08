@@ -8,11 +8,12 @@
     align-items: center;
     margin-right: 90px;
     
-    @media screen and (max-width: 768px){
-        display: none;
+    @media screen and (max-width: 767px){
+        display: none;}
 
-    }
+        @media screen and (min-width: 1199px){}
     
+    margin-right: auto;
 }
 
 .header__logo{
